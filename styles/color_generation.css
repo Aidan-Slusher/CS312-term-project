@@ -1,0 +1,58 @@
+/* Define color variables */
+:root {
+    --primary-color: #214B6A;
+    --text-color: #E5EBFF; /* Initial text color */
+    --dark-grey: #333333;
+    --accent-color: #4CAF50;
+}
+
+/* Apply color scheme */
+html {
+    background-color: var(--primary-color);
+}
+body {
+    padding: 0;
+    margin: 0;
+    color: var(--text-color); /* Apply initial text color */
+}
+img {
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 250px;
+    max-width: 250px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark-grey);
+}
+h1 {
+    text-align: center;
+    padding: 25px;
+}
+nav a {
+    text-decoration: none;
+    padding: 16px 20px;
+    color: var(--text-color); /* Apply initial text color */
+    animation: phaseText 10s infinite; /* Apply animation with duration */
+}
+footer {
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #CCCCCC;
+    bottom: 0;
+    width: 99.5%;
+    color: #333333;
+}
+
+/* Define animation for phasing text color */
+@keyframes phaseText {
+    0% { color: #FF9900; } /* Bright orange */
+    25% { color: #66CCCC; } /* Light blue */
+    50% { color: #FF6666; } /* Light red */
+    75% { color: #99CC66; } /* Light green */
+    100% { color: #FFCC99; } /* Light peach */
+}
